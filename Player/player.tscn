@@ -7,6 +7,74 @@
 radius = 4.0
 height = 12.0
 
+[sub_resource type="Animation" id="Animation_io7l2"]
+resource_name = "IdleDown"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [18]
+}
+
+[sub_resource type="Animation" id="Animation_aqs16"]
+resource_name = "IdleLeft"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+
+[sub_resource type="Animation" id="Animation_vrisj"]
+resource_name = "IdleRight"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_aglh7"]
+resource_name = "IdleUp"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+
 [sub_resource type="Animation" id="Animation_u8g7g"]
 length = 0.001
 
@@ -78,74 +146,6 @@ tracks/0/keys = {
 "values": [7, 8, 9, 10, 11, 6]
 }
 
-[sub_resource type="Animation" id="Animation_vrisj"]
-resource_name = "IdleRight"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_aglh7"]
-resource_name = "IdleUp"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [6]
-}
-
-[sub_resource type="Animation" id="Animation_aqs16"]
-resource_name = "IdleLeft"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [12]
-}
-
-[sub_resource type="Animation" id="Animation_io7l2"]
-resource_name = "IdleDown"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [18]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l63jj"]
 _data = {
 "IdleDown": SubResource("Animation_io7l2"),
@@ -166,7 +166,7 @@ script = ExtResource("1_0o3ri")
 position = Vector2(0, -9)
 texture = ExtResource("2_qc8hv")
 hframes = 60
-frame = 19
+frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
