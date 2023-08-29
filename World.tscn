@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://2kq42qntixv4"]
+[gd_scene load_steps=4 format=3 uid="uid://2kq42qntixv4"]
 
 [ext_resource type="PackedScene" uid="uid://cywqrc3wh7le3" path="res://Player/player.tscn" id="2_3dsy0"]
 [ext_resource type="PackedScene" uid="uid://ctaiki18sg23e" path="res://World/Bush.tscn" id="2_ib735"]
+[ext_resource type="Texture2D" uid="uid://c5k2t5egh006i" path="res://World/GrassBackground.png" id="3_aek3x"]
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -12,3 +13,11 @@ position = Vector2(120, 48)
 
 [node name="Bush" parent="." instance=ExtResource("2_ib735")]
 position = Vector2(56, 32)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+texture_repeat = 2
+position = Vector2(160, 90)
+texture = ExtResource("3_aek3x")
+region_enabled = true
+region_rect = Rect2(0, 0, 320, 180)
